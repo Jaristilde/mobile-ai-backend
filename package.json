@@ -1,0 +1,39 @@
+{
+  "name": "shipmobilefast-ai-backend",
+  "version": "2.0.0",
+  "description": "Backend service for AI chat applications",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node --files src/server.ts",
+    "generate-keys": "ts-node scripts/generate-keys.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@fal-ai/client": "^1.6.2",
+    "@google/genai": "^0.8.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.1",
+    "firebase-admin": "^13.4.0",
+    "helmet": "^7.2.0",
+    "openai": "^4.104.0",
+    "replicate": "^1.1.0",
+    "sanitize-html": "^2.17.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/crypto-js": "^4.2.2",
+    "@types/express": "^4.17.23",
+    "@types/node": "^20.19.11",
+    "@types/sanitize-html": "^2.16.0",
+    "ts-node": "10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
